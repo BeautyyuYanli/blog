@@ -1,9 +1,9 @@
 const BLOG = {
-  title: 'CRAIGARY',
-  author: 'Craig Hart',
-  email: 'i@craigary.net',
-  link: 'https://nobelium.vercel.app',
-  description: 'This gonna be an awesome website.',
+  title: '银河美术馆 Gallery of Galaxy',
+  author: 'Beautyyu言醴',
+  email: 'beautyyuyanli@gmail.com',
+  link: 'https://blog.beautyyu.one/',
+  description: 'Beautyyu言醴\'s Blog',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -11,26 +11,27 @@ const BLOG = {
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#18181B', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2021, // If leave this empty, current year will be used.
-  postsPerPage: 7,
+  since: 2022, // If leave this empty, current year will be used.
+  postsPerPage: 20,
   sortByDate: false,
   showAbout: true,
   showArchive: true,
+  showLink: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/craigaryhart',
+  socialLink: '',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ['博客', 'Notion', 'blog', 'beautyyu', 'yanli', '言醴'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
-    provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
+    provider: 'ackee', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
     ackeeConfig: {
-      tracker: '', // e.g 'https://ackee.craigary.net/tracker.js'
-      dataAckeeServer: '', // e.g https://ackee.craigary.net , don't end with a slash
-      domainId: '' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
+      tracker: 'https://ackee.beautyyu.one/tracker.js', // e.g 'https://ackee.craigary.net/tracker.js'
+      dataAckeeServer: 'https://ackee.beautyyu.one', // e.g https://ackee.craigary.net , don't end with a slash
+      domainId: '87a4163e-1dcf-414f-804c-70be90ef6196' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
     },
     gaConfig: {
       measurementId: '' // e.g: G-XXXXXXXXXX
@@ -38,13 +39,13 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'gitalk', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: '', // The repository of store comments
-      owner: '',
-      admin: [],
-      clientID: '',
-      clientSecret: '',
+      repo: 'gitalk-for-blog', // The repository of store comments
+      owner: 'BeautyyuYanli',
+      admin: ['BeautyyuYanli'],
+      clientID: '43041894b514b0df2f30',
+      clientSecret: '3f03503ce471f57b7a458c7247d40b8056f1781b',
       distractionFreeMode: false
     },
     utterancesConfig: {
